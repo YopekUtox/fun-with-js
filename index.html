@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Array operation</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <audio  autoplay>
+      <source src="https://upload.wikimedia.org/wikipedia/commons/c/c9/GT_AH_AMS.ogg" type="audio/ogg">
+     </audio>
+     
+    <h3 class="change_t">🇬🇧 Original Table 🇬🇧</h3>
+    <table>
+      <tr>
+        <td>😎</td>
+        <td>😋</td>
+        <td>😍</td>
+        <td>🤔</td>
+        <td>😜</td>
+        <td>🎉</td>
+        <td>🙈</td>
+      </tr>
+    </table>
+    <div class="afterTransform"></div>
+    <script src="script.js"></script>
+    <script>
+      const translations = [
+        "🇵🇱 Oryginalne Tabelki 🇵🇱",
+        "🇩🇪 Originaltabelle 🇩🇪",
+      ]; //uproszczenie fajnie fajnie
+      setInterval(function () {
+        const element = document.querySelector(".change_t");
+        const randomTranslation = translations[Math.random() > 0.5 ? 1 : 0];
+        element.innerHTML = randomTranslation;
+      }, 3000);
+      // więc?
+      // wiec co?
+      // mam cos lepszego :D, momento
+    </script>
+  </body>
+</html>

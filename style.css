@@ -1,0 +1,65 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+:root {
+  --main-color: #191919;
+  --text-color: #dddddd;
+  --second-color: #e43d40;
+  --df-margin: 10px;
+  --df-padding: 10px;
+  --df-radius: 5px;
+  --df-border: 5px solid var(--second-color);
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--main-color);
+  color: var(--text-color);
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: "Poppins", sans-serif;
+}
+
+table {
+  background: rgb(29, 42, 81);
+  padding: 1.5rem 3rem;
+}
+
+tr {
+  font-size: 20px;
+  border-collapse: collapse;
+}
+
+td {
+  padding: 0.1rem;
+}
+
+.row {
+  padding: 1.5rem 3rem;
+  background: rgb(29, 42, 81);
+  margin-top: 1rem;
+}
+
+.comment {
+  color: #787878;
+  opacity: 0.65;
+}
+
+.nameOfFunction {
+  color: #e7e42a;
+  font-weight: 700;
+}
+
+.paramNumber {
+  color: orange;
+}
